@@ -531,23 +531,6 @@ pie showData
 
 > Catatan: statistik di atas adalah snapshot lokal struktur kode (bukan traffic analytics GitHub).
 
-### 16.6 Cara regenerate statistik
-
-Jalankan perintah berikut dari root project:
-
-```bash
-# Total file tanpa node_modules
-find . -path './node_modules' -prune -o -type f -print | wc -l
-
-# Ukuran repo tanpa node_modules
-du -sh . --exclude=node_modules
-
-# LOC frontend source
-find src -type f \( -name '*.js' -o -name '*.jsx' -o -name '*.css' \) -print \
-| while read -r f; do wc -l "$f"; done \
-| awk '{s+=$1} END{print s+0}'
-```
-
 ---
 
 ## 17. Roadmap Pengembangan
