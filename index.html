@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="https://bem.unma.ac.id/logo.png" />
+    <link rel="apple-touch-icon" href="https://bem.unma.ac.id/logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="BEM Print adalah aplikasi upload file modern untuk mengirim dokumen dan gambar ke Google Drive melalui integrasi Google Apps Script."
+    />
+    <meta
+      name="keywords"
+      content="BEM Print, upload file, Google Drive, Apps Script, dokumen, PDF, Word, Excel, image uploader"
+    />
+    <meta name="author" content="BEM Print" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#2563eb" />
+    <link rel="canonical" href="https://bem.unma.ac.id/print" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="BEM Print" />
+    <meta property="og:url" content="https://bem.unma.ac.id/print" />
+    <meta property="og:title" content="BEM Print | Upload Dokumen ke Google Drive" />
+    <meta
+      property="og:description"
+      content="Upload dokumen Word, Excel, PDF, dan gambar ke Google Drive dengan cepat dan aman melalui BEM Print."
+    />
+    <meta property="og:image" content="https://bem.unma.ac.id/logo.png" />
+    <meta property="og:locale" content="id_ID" />
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="BEM Print | Upload Dokumen ke Google Drive" />
+    <meta
+      name="twitter:description"
+      content="Upload dokumen Word, Excel, PDF, dan gambar ke Google Drive dengan cepat dan aman melalui BEM Print."
+    />
+    <meta name="twitter:image" content="https://bem.unma.ac.id/logo.png" />
+
+    <title>BEM Print | Upload Dokumen ke Google Drive</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+    <script>
+      (function () {
+        try {
+          const theme = localStorage.getItem("vite-ui-theme");
+          const resolved = theme === "dark" ? "dark" : "light";
+          document.documentElement.classList.add(resolved);
+        } catch (_) {}
+      })();
+    </script>
+  </body>
+</html>
